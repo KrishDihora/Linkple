@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Linkple" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        //statusBar
+        <item name="android:statusBarColor">@color/blue</item>
+
+    </style>
+
+    <style name="Theme.Linkple" parent="Base.Theme.Linkple" />
+
+    <style name="Splash.Theme.Linkple" parent="Theme.Material3.DayNight.NoActionBar" >
+
+        /statusBar
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+
+    </style>
+
+    <style name="Dashboard.Theme.Linkple" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        //statusBar
+        <item name="android:statusBarColor">@color/blue</item>
+
+    </style>
+
+</resources>
