@@ -107,7 +107,7 @@ public class LoginActivity extends AppCompatActivity {
                 mail = binding.mailText.getText().toString();
                 password = binding.passwordText.getText().toString();
 
-                if (!(mail.isEmpty()) || mail.equals(null) || !(password.isEmpty()) || password.equals(null)){
+                if (!(mail.isEmpty()) && mail.equals(null) && !(password.isEmpty()) && password.equals(null)){
 
                     auth.signInWithEmailAndPassword(mail,password)
                             .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {

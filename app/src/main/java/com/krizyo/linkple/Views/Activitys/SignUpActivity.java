@@ -89,7 +89,7 @@ public class SignUpActivity extends AppCompatActivity {
                 userModel.setMail(mail);
                 userModel.setPassword(password);
 
-                if (!(mail.isEmpty()) || mail.equals(null) || !(password.isEmpty()) || password.equals(null) || !(name.isEmpty()) || name.equals(null)){
+                if (!(mail.isEmpty()) && mail.equals(null) && !(password.isEmpty()) && password.equals(null) && !(name.isEmpty()) && name.equals(null)){
 
                     auth.createUserWithEmailAndPassword(mail,password)
                             .addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
